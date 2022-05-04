@@ -184,6 +184,3 @@ class ArticlesController extends Controller{
         }
     }
 }
-
-
-
