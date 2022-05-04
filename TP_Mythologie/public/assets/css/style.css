@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    color: currentColor;
+}
+
+nav {
+    height: 50px;
+    background-color: antiquewhite;
+}
+
+.logo {
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+}
+
+.card {
+    width: 300px;
+}
+.card img {
+    height: 200px;
+}
+
+.image-article {
+    max-width: 400px;
+    max-height: 400px;
+}
+
