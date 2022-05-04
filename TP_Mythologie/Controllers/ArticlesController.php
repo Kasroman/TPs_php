@@ -61,13 +61,15 @@ class ArticlesController extends Controller{
 
     public function add(){
 
-        // On vérifie que l'utilisateur soit admin
+        // On vérifie que l'utilisateur soit connecté
         if(!isset($_SESSION['user'])){
             $errorsModel = new ErrorsController;
             $errorsModel->error404();
             exit;
 
         }
+
+        // On vérifie qu'il soit admin
         if($_SESSION['user']['role'] !== 'admin'){
             $_SESSION['msg'] = ['danger', 'Vous n\'avez pas la permission d\'acceder à cette page.'];
             header('Location: ' . ROOT_PUBLIC . 'articles');
