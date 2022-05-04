@@ -109,7 +109,6 @@ class ArticlesController extends Controller{
                 $articlesModel = new ArticlesModel;
 
                 if($articlesModel->getBy(['titre_article' => $title])){
-                    var_dump($articlesModel);
                     $_SESSION['msg'] = ['danger', 'Un article avec ce titre existe déjà.'];
                     header('Location: ' . $_SERVER['HTTP_REFERER']);
                     exit;
