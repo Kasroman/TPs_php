@@ -38,7 +38,7 @@
                 <?php endif; ?>
             <?php endif; ?>
         </div>
-        <h5 class="text-muted mb-2">par <span class="fw-bold"><?= ucFirst($article->pseudo_user) ?></span> le <span class="fw-bold fst-italic"><?= $article->date_article ?></span></h5>
+        <h5 class="text-muted mb-2">par <span class="fw-bold"><?= ucFirst($article->pseudo_user) ?></span> le <span class="fw-bold fst-italic"><?= substr($article->date_article, 0, -3) ?></span></h5>
         <div class="">
             <img class="image-article float-start me-3 mb-3 mt-1" src="<?= ROOT_PUBLIC . 'assets/img/articles/' . $article->image_article ?>" alt="Illustration pour <?= $article->titre_article ?>">
             <p class=""><?= htmlspecialchars_decode($article->contenu_article) ?></p>
